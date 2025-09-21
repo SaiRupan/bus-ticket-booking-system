@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to SR Bus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts and Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url('https://images.unsplash.com/photo-1743660622191-81431f288648?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    nav h1 {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .login-btn {
+      padding: 10px 20px;
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #1565c0;
+    }
+
+    /* Hero Section */
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-flex;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ff4081;
+    }
+
+    .social-icons i {
+      margin-right: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .login-btn {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a class="navbar-brand" href="#" style="font-size: 28px; font-weight: bold; color: #ffffff;">
+      🚌  <span style="color: #ffdd00;">SR</span><span style="color: #ffffff;">Bus</span>
+    </a>
+    
+    <a href="login.php" class="login-btn">Login</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to SR Travels</h2>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 SR Bus. All rights reserved.
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i>SR Bus</a>
+      <a href="#"><i class="fab fa-facebook"></i>SR Bus</a>
+    </div>
+  </footer>
+
+</body>
+</html>
